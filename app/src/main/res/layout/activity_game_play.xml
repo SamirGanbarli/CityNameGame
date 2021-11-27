@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePlay">
+
+    <TextView
+        android:id="@+id/textVNlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="N hərfli şəhər"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textVPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <TextView
+        android:id="@+id/textVPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="$$$$$$$"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtInput"
+        app:layout_constraintEnd_toEndOf="@+id/textVNlet"
+        app:layout_constraintStart_toStartOf="@+id/textVNlet" />
+
+    <EditText
+        android:id="@+id/editTxtInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Giriş edin"
+        android:inputType="textPersonName"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="check"
+        android:text="Yoxlayın"
+        app:layout_constraintBottom_toTopOf="@+id/btnHelp"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtInput"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/editTxtInput"
+        app:layout_constraintTop_toBottomOf="@+id/textVPassword"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="helpLet"
+        android:text="Hərf köməyi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@+id/textVPassword"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="exittheGame"
+        android:text="Çıxış"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnHelp"
+        app:layout_constraintStart_toStartOf="@+id/btnHelp"
+        app:layout_constraintTop_toBottomOf="@+id/btnHelp"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <TextView
+        android:id="@+id/txtVPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xal"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/txtTotPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ümumi Xal"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+</androidx.constraintlayout.widget.ConstraintLayout>
